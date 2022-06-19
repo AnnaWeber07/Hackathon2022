@@ -1,0 +1,21 @@
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+GO
+
+IF OBJECT_ID('dbo.UpdateRoles') IS NULL
+	EXEC ('CREATE PROCEDURE dbo.UpdateRoles AS RETURN 0')
+GO
+
+ALTER PROCEDURE dbo.UpdateRoles
+	@ID    INT,
+	@Descr NVARCHAR(255)
+AS
+
+IF @ID IS NULL 
+	INSERT INTO Roles(Descr)
+	VALUES
+	(@Descr)
+ELSE
+	UPDATE Roles 
+	SET    Descr = @Descr
+	WHERE ID = @ID

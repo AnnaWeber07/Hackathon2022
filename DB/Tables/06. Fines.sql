@@ -1,0 +1,14 @@
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+GO
+
+USE UNEXUS_APPSERVER
+
+CREATE TABLE Fines
+(
+	ID               INT IDENTITY(1,1) PRIMARY KEY,
+	[User]           INT,
+	FinesPointAmount INT,
+
+	FOREIGN KEY ([User]) REFERENCES Users(ID)
+)

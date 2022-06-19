@@ -1,0 +1,14 @@
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE DATABASE UNEXUS_APPSERVER
+GO
+
+INSERT INTO Roles(Descr)
+VALUES 
+('Admin')
+
+INSERT INTO Users(Name, Password, Role, BonusPoint)
+VALUES
+('Admin', 'asdfgh1!', (SELECT TOP 1 ID FROM Roles), 0)

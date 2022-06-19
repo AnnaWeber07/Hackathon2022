@@ -1,0 +1,14 @@
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+GO
+
+IF OBJECT_ID('dbo.DeleteFines') IS NULL
+	EXEC ('CREATE PROCEDURE dbo.DeleteFines AS RETURN 0')
+GO
+
+ALTER PROCEDURE dbo.DeleteFines
+	@ID               INT
+AS
+
+DELETE FROM Fines
+WHERE  ID = @ID

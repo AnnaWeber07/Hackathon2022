@@ -1,0 +1,5 @@
+C:\Users\Alexandr\source\repos\Unexus.Facade\Unexus.Facade\obj\Debug\Unexus.Facade.csproj.CoreCompileInputs.cache
+C:\Users\Alexandr\source\repos\Unexus.Facade\Unexus.Facade\bin\Debug\Unexus.Facade.dll
+C:\Users\Alexandr\source\repos\Unexus.Facade\Unexus.Facade\bin\Debug\Unexus.Facade.pdb
+C:\Users\Alexandr\source\repos\Unexus.Facade\Unexus.Facade\obj\Debug\Unexus.Facade.dll
+C:\Users\Alexandr\source\repos\Unexus.Facade\Unexus.Facade\obj\Debug\Unexus.Facade.pdb
